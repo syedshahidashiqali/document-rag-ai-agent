@@ -8,12 +8,11 @@ This project showcases a complete, production-ready RAG architecture orchestrate
 
 ## 📺 Video Demo
 
-[![Watch the video](https://img.youtube.com/vi/eunl83jkD_8/0.jpg)](https://youtu.be/eunl83jkD_8)
+[Watch the video on YouTube](https://youtu.be/eunl83jkD_8)
 
-<h2 align="center">🎥 Project Demo</h2>
 <p align="center">
   <a href="https://youtu.be/eunl83jkD_8" target="_blank">
-    <img src="https://img.youtube.com/vi/eunl83jkD_8/0.jpg" alt="Project Demo" width="60%">
+    <img src="https://i9.ytimg.com/vi_webp/eunl83jkD_8/mqdefault.webp?v=68f55d68&sqp=CIi61ccG&rs=AOn4CLDQa8y0Oo_E_8eh8kTu7mYtZ0p47g" alt="Project Demo" width="60%">
   </a>
 </p>
 
