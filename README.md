@@ -8,7 +8,7 @@ This project showcases a complete, production-ready RAG architecture orchestrate
 
 ## 📺 Video Demo
 
-[Embed your video here — e.g., a YouTube link or GIF showing the Streamlit UI in action.]
+[![Watch the video](https://i9.ytimg.com/vi_webp/eunl83jkD_8/mq2.webp?sqp=CLC11ccG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGCwgZShIMA8=&rs=AOn4CLC-knr82tV7fiRRms1qVUBXPdy-iA)](https://youtu.be/eunl83jkD_8)
 
 ---
 
