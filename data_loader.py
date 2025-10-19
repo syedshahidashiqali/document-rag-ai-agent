@@ -1,18 +1,18 @@
-# from openai import OpenAI
-from google import genai
+from openai import OpenAI
+# from google import genai
 from llama_index.readers.file import PDFReader
 from llama_index.core.node_parser import SentenceSplitter
 from dotenv import load_dotenv
 
 load_dotenv()
 
-# client = OpenAI()
-client = genai.Client()
+client = OpenAI()
+# client = genai.Client()
 
 
 reader = PDFReader()
-# EMBED_MODEL = "text-embedding-3-large"
-EMBED_MODEL = "gemini-embedding-001"
+EMBED_MODEL = "text-embedding-3-large"
+# EMBED_MODEL = "gemini-embedding-001"
 EMBED_DIM = 3072
 
 
@@ -29,18 +29,18 @@ def load_and_chunk_pdf(path:str):
     chunks.extend(splitter.split_text(t))
   return chunks
 
-# def embed_texts(texts: list[str]) -> list[list[float]]:
-#   response = client.embeddings.create(
-#     model=EMBED_MODEL,
-#     input=texts
-#   )
-
-#   return [item.embedding for item in response.data]
-
 def embed_texts(texts: list[str]) -> list[list[float]]:
-  response = client.models.embed_content(
+  response = client.embeddings.create(
     model=EMBED_MODEL,
-    contents=texts
+    input=texts
   )
 
-  return [embedding.values for embedding in response.embeddings]
+  return [item.embedding for item in response.data]
+
+# def embed_texts(texts: list[str]) -> list[list[float]]:
+#   response = client.models.embed_content(
+#     model=EMBED_MODEL,
+#     contents=texts
+#   )
+
+#   return [embedding.values for embedding in response.embeddings]
